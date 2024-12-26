@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMLopedia</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            row-gap: 20px;
+            
+            background-color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            font-size: 14px;
+            color: white;
+        }
+        
+        .label {
+            display: inline-block;
+            width: 60px;
+            text-align: center;
+            padding: 2px 20px;
+            margin: 0;
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        header {
+            height: 200px;
+            width: 100%;
+            background-color: #b8e4e4;
+            box-shadow: inset 0 0 0 2px #007474;
+            position: relative;
+        }
+        
+        .header-text {
+            background-color: #007474;
+        }
+
+        .main-container {
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            column-gap: 20px;
+        }
+
+        main {
+            display: inline-block;
+            height: 100%;
+            flex: 2;
+            background-color: #b8e4e4;
+            border: 2px solid #007474;
+            position: relative;
+        }
+
+        .main-text {
+            background-color: #007474;
+        }
+
+        aside {
+            display: inline-block;
+            height: 100%;
+            flex: 1;
+            background-color: #b8e4e4;
+            border: 2px solid #007474;
+            position: relative;
+        }
+
+        .aside-text {
+            background-color: #007474;
+        }
+
+        footer {
+            height: 10vh;
+            width: 100%;
+            background-color: #b8e4e4;
+            box-shadow: inset 0 0 0 2px #007474;
+            position: relative;
+        }
+
+        .footer-text {
+            background-color: #007474;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <p class="label header-text">&lt;header&gt;</p>
+    </header>
+    <div class="main-container">
+        <main>
+            <p class="label main-text">&lt;main&gt;</p>
+        </main>
+        <aside><p class="label aside-text">&lt;aside&gt;</p></aside>
+    </div>
+    <footer>
+        <p class="label footer-text">&lt;footer&gt;</p>
+    </footer>
+</body>
+
+</html>
